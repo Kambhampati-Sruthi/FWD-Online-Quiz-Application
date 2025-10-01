@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Dev Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h2 id="question">Loading...</h2>
+    <ul id="choices"></ul>
+
+    <div class="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <div class="info">
+      <span id="question-number"></span>
+      <span id="questions-left"></span>
+    </div>
+
+    <div id="feedback"></div>
+    <div id="score">Score: 0</div>
+    <div id="time">15</div>
+    <button id="next-btn" disabled>Next</button>
+
+    <div id="end-screen" style="display:none;">
+      <h2>🎉 Quiz Finished!</h2>
+      <p id="final-score"></p>
+      <button id="restart-btn">Restart</button>
+    </div>
+  </div>
+
+  <!-- Sound effects -->
+  <audio id="correct-sound" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
+  <audio id="wrong-sound" src="https://www.fesliyanstudios.com/play-mp3/6675" preload="auto"></audio>
+  <audio id="timesup-sound" src="https://www.fesliyanstudios.com/play-mp3/6538" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

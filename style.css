@@ -1,0 +1,161 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+  background-image: url('https://st3.depositphotos.com/7865540/13803/i/600/depositphotos_138030202-stock-photo-physics-concept-on-background.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.quiz-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s ease;
+}
+
+.quiz-container:hover {
+  transform: scale(1.02);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#choices {
+  list-style: none;
+  padding: 0;
+}
+
+#choices li {
+  background: #e0e0e0;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#choices li:hover {
+  background: #d0d0d0;
+  transform: scale(1.01);
+}
+
+#choices li.correct {
+  background-color: #c8e6c9;
+  border: 2px solid #2e7d32;
+  color: #2e7d32;
+}
+
+#choices li.wrong {
+  background-color: #ffcdd2;
+  border: 2px solid #c62828;
+  color: #c62828;
+}
+
+#feedback {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+#score, #time {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#time {
+  background: #ff5252;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#next-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#next-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+#next-btn:hover:enabled {
+  background: #005fa3;
+}
+
+.progress-container {
+  background: #ddd;
+  border-radius: 10px;
+  height: 10px;
+  margin: 15px 0;
+}
+
+#progress-bar {
+  background: #0078d4;
+  height: 10px;
+  border-radius: 10px;
+  width: 0%;
+  transition: width 0.5s ease;
+}
+
+#end-screen {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#restart-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#restart-btn:hover {
+  background: #388e3c;
+}
