@@ -15,7 +15,7 @@ Visit the live site: [FWD Online Quiz](https://kambhampati-sruthi.github.io/FWD-
    ```bash
    git clone https://github.com/your-username/FWD-Online-Quiz-Application.git
 
-## Technologies Used
+**## Technologies Used**
 - HTML
 - CSS
 - JavaScript
